@@ -62,7 +62,8 @@ class SocialMediaShare
     }
 
     public function load_shortcode()
-    { ?>
+    {
+        ob_start(); ?>
         <div class="share-buttons-container">
             <div class="main-share-btn">
                 <img src="https://cdn-icons-png.flaticon.com/512/61/61020.png">
@@ -119,7 +120,7 @@ class SocialMediaShare
                 </a>
             </div>
         </div>
-<?php }
+<?php return ob_get_clean(); }
 }
 
 new SocialMediaShare;

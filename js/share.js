@@ -41,7 +41,7 @@ for (var i = 0; i < mainButton.length; i++) {
         var otherInput = jQuery(this).closest('.main-share-btn').parent().prev();
         var fileLink = jQuery(otherInput).attr('href');
         details = get_share_links(fileLink);
-        // console.log(jQuery(otherInput).attr('href'))
+        console.log(otherInput)
     };
     console.log(details);
 }
