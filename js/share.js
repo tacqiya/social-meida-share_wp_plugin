@@ -29,19 +29,20 @@ for (var i = 0; i < mainButton.length; i++) {
         // console.log(this.getAttribute('id'))
         var id = this.getAttribute('id');
         var dynamicId = "#share_list_" + (id);
-        jQuery("#share_list_" + id).css('display', 'flex');
+        jQuery("#share_list_" + id).css('display', 'inline-flex');
         var div = document.querySelector(dynamicId);
         // console.log(div)
         // if (div.style.display === 'none') {
-        //     div.style.display = 'flex';
+        //     div.style.display = 'inline-flex';
         // } else {
         //     div.style.display = 'none';
         // }
+        console.log(dynamicId)
         jQuery(dynamicId).toggleClass("flexbox");
         var otherInput = jQuery(this).closest('.main-share-btn').parent().prev();
         var fileLink = jQuery(otherInput).attr('href');
         details = get_share_links(fileLink);
-        console.log(otherInput)
+        // console.log(otherInput)
     };
     console.log(details);
 }

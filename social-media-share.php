@@ -65,7 +65,7 @@ class SocialMediaShare
     {
         ob_start(); ?>
         <div class="share-buttons-container">
-            <div class="main-share-btn">
+            <div class="main-share-btn" title="Share">
                 <img src="https://cdn-icons-png.flaticon.com/512/61/61020.png">
             </div>
             <div class="share-list">
